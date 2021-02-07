@@ -91,9 +91,6 @@ header .logo {
 	font-weight: 700;
 	letter-spacing: 2px;
 }
-/* header.sticky .logo {
-	color: #111;
-} */
 header ul {
 	position: relative;
 	display: flex;
@@ -112,53 +109,8 @@ header ul li a {
 header.sticky ul li a {
 	color: #fff;
 }
-/* 
-========================
-      BUTTON THREE
-========================
-*/
-.btn-three {
-	color: #fff;
-	transition: all 0.5s;
-	position: relative;
-}
-.btn-three::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	background-color: rgba(255, 255, 255, 0.1);
-	transition: all 0.3s;
-}
-.btn-three:hover::before {
-	opacity: 0;
-	transform: scale(0.5, 0.5);
-}
-.btn-three::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	opacity: 0;
-	transition: all 0.3s;
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	transform: scale(1.2, 1.2);
-}
-.btn-three:hover::after {
-	opacity: 1;
-	transform: scale(1, 1);
-}
-/* 
-========================
-      BUTTON ONE
-========================
-*/
+
+/* btn type one */
 .btn-one {
 	color: #fff;
 	transition: all 0.3s;
@@ -209,76 +161,6 @@ header.sticky ul li a {
 }
 /* ----------------------- */
 
-.text-box {
-	margin-left: 44vw;
-	margin-top: 42vh;
-	z-index: 100;
-}
-
-.btn2:link,
-.btn2:visited {
-	text-transform: uppercase;
-	text-decoration: none;
-	padding: 15px 40px;
-	display: inline-block;
-	border-radius: 100px;
-	transition: all 0.2s;
-	position: absolute;
-}
-
-.btn2:hover {
-	transform: translateY(-3px);
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-	background: rgba(1, 98, 116, 0.376);
-}
-
-.btn2:active {
-	transform: translateY(-1px);
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.btn-white {
-	background-color: #fff;
-	color: #777;
-}
-.btn-white::after {
-	background-color: #fff;
-}
-
-.btn2::after {
-	content: "";
-	display: inline-block;
-	height: 100%;
-	width: 100%;
-	border-radius: 100px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	transition: all 0.4s;
-}
-
-.btn2:hover::after {
-	transform: scaleX(1.4) scaleY(1.6);
-	opacity: 0;
-}
-
-.btn2-animated {
-	animation: moveInBottom 5s ease-out;
-	animation-fill-mode: backwards;
-}
-
-@keyframes moveInBottom {
-	0% {
-		opacity: 0;
-		transform: translateY(30px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0px);
-	}
-}
 
 /* btn-banner */
 .btn-banner {
@@ -348,16 +230,9 @@ header.sticky ul li a {
 	border-radius: 1rem;
 	border-color: #000000 !important;
 }
-/* .heading h2::before,
-.heading h2::after {
-	content: "";
-	flex: 1 1;
-	border-bottom: 2px solid #000;
-	margin: auto;
-} */
+
 .about-container {
 	display: flex;
-	/* flex-direction: column-reverse; */
 	width: 50%;
 	justify-content: center;
 	align-items: center;
@@ -377,8 +252,8 @@ header.sticky ul li a {
 	height: 300px;
 	object-fit: cover;
 }
+/* Skills */
 .skills {
-	/* background: #111; */
 	background: url("https://securityledger.com/wp-content/uploads/2020/05/open_source.jpg")
 		center center/cover no-repeat;
 	z-index: 1;
@@ -399,8 +274,6 @@ header.sticky ul li a {
 	color: white;
 }
 
-/* ---------------- */
-
 .skills .divider-custom-line::before,
 .skills .divider-custom-line::after,
 .contact .divider-custom-line::before,
@@ -415,28 +288,18 @@ header.sticky ul li a {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(4, 1fr);
-	/* max-width: ; */
 	grid-gap: 0.5rem;
-	/* padding: 2rem; */
-	/* width: 100vw;
-	max-width: 100%;
-	margin: 24px 0; */
-	/* display: flex; */
-	/* width: 100vw; */
-
 	padding: 0;
 	text-align: center;
 	color: #fff;
 	font-size: 4rem;
 	flex-wrap: wrap;
 	justify-content: center;
-	/* background: #777777; */
 	background: hsl(200, 82%, 24%);
 }
 .skills-content h6 {
 	font-weight: bold;
 	color: black;
-	/* background-color: white; */
 	color: #1ec3c7;
 	border-radius: 5px;
 	text-align: center;
@@ -453,21 +316,15 @@ header.sticky ul li a {
 	align-items: center;
 	flex-direction: column;
 	border: 1px solid white;
-	/* -------- */
-	/* padding: 40px 20px; */
 	border-radius: 10px;
 	background: #222;
 	color: #fff;
 	max-width: 340px;
-	/* margin: 20px; */
 	text-align: center;
 	transition: all 0.3s ease;
 }
 
 .skills-content > div:hover {
-	/* color: #1ec3c7; */
-	/* background: #1ec3c7; */
-	/* background: #2196f3; */
 	color: #fff;
 	background: hsl(200, 82%, 24%);
 	transform: scale(1.05);
@@ -476,18 +333,11 @@ header.sticky ul li a {
 .skills-container {
 	padding: 1rem;
 }
-/* ---------- START Project Section ---------- */
+/* Projects */
 #projects-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	/* grid-template-rows: repeat(3, 1vw); */
 	grid-gap: 1.5rem;
-	/* justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap; */
-	/* width: 100vw;
-	max-width: 100%;
-	margin: 24px 0; */
 	max-width: 70%;
 	padding: 2rem;
 	background: hsl(200, 82%, 24%);
@@ -515,7 +365,6 @@ header.sticky ul li a {
 	width: 100%;
 	border-radius: 10px;
 	background-color: hsl(216, 33%, 97%);
-	/* border-radius: 5px 5px 0 0; */
 	box-shadow: 0 0 3px 3px hsl(210, 16%, 82%);
 	transition: box-shadow 0.5s ease-in-out;
 }
@@ -551,10 +400,7 @@ header.sticky ul li a {
 /* Contact Page */
 .contact {
 	background: hsl(200, 68%, 35%);
-	/* background: #1ec3c7; */
 	min-height: 90vh;
-	/* color: #fff; */
-	/* color: #1ec3c7; */
 	background: #222;
 }
 
@@ -580,7 +426,6 @@ header.sticky ul li a {
 	margin-bottom: 10px;
 }
 .icon-background {
-	/* color: #c0ffc0; */
 	color: #1ec3c7;
 }
 .contact-container {
@@ -591,7 +436,6 @@ header.sticky ul li a {
 	padding: 50px;
 	border-radius: 20px;
 	border: 2px #1ec3c7 solid;
-	/* border-top: 2px #1ec3c7 solid; */
 	margin-bottom: 10px;
 }
 .contact-container > span {
