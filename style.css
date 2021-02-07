@@ -74,12 +74,11 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	transition: 0.5s;
+	font-size: 1.15rem;
+	line-height: 24px;
 }
 header.sticky {
-	/* background: rgba(1, 98, 116, 1); */
 	background: hsl(200, 82%, 24%);
-	/* background: #1e555ca1; */
-	/* background: #fff; */
 	padding: 20px 100px;
 	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
@@ -110,16 +109,16 @@ header.sticky ul li a {
 	color: #fff;
 }
 
-/* btn type one */
-.btn-one {
+/* nav button */
+.btn-nav {
 	color: #fff;
 	transition: all 0.3s;
 	position: relative;
 }
-.btn-one span {
+.btn-nav span {
 	transition: all 0.3s;
 }
-.btn-one::before {
+.btn-nav::before {
 	content: "";
 	position: absolute;
 	bottom: 0;
@@ -137,14 +136,14 @@ header.sticky ul li a {
 	border-bottom-color: rgba(255, 255, 255, 0.5);
 	transform: scale(0.1, 1);
 }
-.btn-one:hover span {
+.btn-nav:hover span {
 	letter-spacing: 2px;
 }
-.btn-one:hover::before {
+.btn-nav:hover::before {
 	opacity: 1;
 	transform: scale(1, 1);
 }
-.btn-one::after {
+.btn-nav::after {
 	content: "";
 	position: absolute;
 	bottom: 0;
@@ -155,12 +154,10 @@ header.sticky ul li a {
 	transition: all 0.3s;
 	background-color: rgba(255, 255, 255, 0);
 }
-.btn-one:hover::after {
+.btn-nav:hover::after {
 	opacity: 0;
 	transform: scale(0.1, 1);
 }
-/* ----------------------- */
-
 
 /* btn-banner */
 .btn-banner {
@@ -168,6 +165,7 @@ header.sticky ul li a {
 	border: 1px solid rgb(255, 255, 255);
 	position: relative;
 	overflow: hidden;
+	border-radius: 5px 30px 5px 30px;
 }
 
 .btn-banner:hover {
@@ -251,6 +249,7 @@ header.sticky ul li a {
 	width: 300px;
 	height: 300px;
 	object-fit: cover;
+	border-radius: 2px;
 }
 /* Skills */
 .skills {
@@ -341,6 +340,7 @@ header.sticky ul li a {
 	max-width: 70%;
 	padding: 2rem;
 	background: hsl(200, 82%, 24%);
+	border-radius: 10px;
 }
 .project-content > a > img {
 	display: block;
@@ -487,6 +487,7 @@ scroll-page {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		opacity: 0.85;
+		font-size: 1rem;
 	}
 	header ul {
 		display: grid;
@@ -531,6 +532,7 @@ scroll-page {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		opacity: 0.85;
+		font-size: 1rem;
 	}
 	header ul {
 		display: grid;
