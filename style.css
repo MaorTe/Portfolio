@@ -1,3 +1,11 @@
+:root {
+	--white: #fff;
+	--black: #000;
+	--light-green: #1ec3c7;
+	--light-black: #222;
+	--dark-blue: hsl(200, 82%, 24%);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -22,7 +30,7 @@ section {
 
 .banner h2 {
 	font-size: 3em;
-	color: #fff;
+	color: var(--white);
 	font-weight: 500;
 	line-height: 1.5em;
 }
@@ -32,7 +40,7 @@ section {
 }
 .banner h3 {
 	font-size: 1.5em;
-	color: #fff;
+	color: var(--white);
 	font-weight: 500;
 }
 .banner-textBx {
@@ -41,7 +49,7 @@ section {
 }
 .banner-textBx::after {
 	content: "";
-	background: hsl(200, 82%, 24%);
+	background: var(--dark-blue);
 	width: 100%;
 	height: 100vh;
 	opacity: 0.7;
@@ -54,7 +62,7 @@ section {
 .btn {
 	position: relative;
 	display: inline-block;
-	color: #fff;
+	color: var(--white);
 	margin-top: 20px;
 	padding: 10px 30px;
 	font-size: 18px;
@@ -78,12 +86,12 @@ header {
 	line-height: 24px;
 }
 header.sticky {
-	background: hsl(200, 82%, 24%);
+	background: var(--dark-blue);
 	padding: 20px 100px;
 	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 header .logo {
-	color: #fff;
+	color: var(--white);
 	font-size: 24px;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -102,16 +110,16 @@ header ul li a {
 	position: relative;
 	display: inline-block;
 	margin: 0 15px;
-	color: #fff;
+	color: var(--white);
 	text-decoration: none;
 }
 header.sticky ul li a {
-	color: #fff;
+	color: var(--white);
 }
 
 /* nav button */
 .btn-nav {
-	color: #fff;
+	color: var(--white);
 	transition: all 0.3s;
 	position: relative;
 }
@@ -224,9 +232,9 @@ header.sticky ul li a {
 	width: 100%;
 	max-width: 7rem;
 	height: 0.25rem;
-	background-color: #000000;
+	background-color: var(--black);
 	border-radius: 1rem;
-	border-color: #000000 !important;
+	border-color: var(--black) !important;
 }
 
 .about-container {
@@ -260,7 +268,7 @@ header.sticky ul li a {
 }
 .skills::after {
 	content: "";
-	background: hsl(200, 82%, 24%);
+	background: var(--dark-blue);
 	width: 100%;
 	height: 100%;
 	opacity: 0.7;
@@ -270,18 +278,18 @@ header.sticky ul li a {
 	z-index: -10;
 }
 .heading.white {
-	color: white;
+	color: var(--white);
 }
 
 .skills .divider-custom-line::before,
 .skills .divider-custom-line::after,
 .contact .divider-custom-line::before,
 .contact .divider-custom-line::after {
-	background-color: #fff;
+	background-color: var(--white);
 	border-color: #777777 !important;
 }
 .skills h2 {
-	color: #fff;
+	color: var(--white);
 }
 .skills-content {
 	display: grid;
@@ -290,16 +298,16 @@ header.sticky ul li a {
 	grid-gap: 0.5rem;
 	padding: 0;
 	text-align: center;
-	color: #fff;
+	color: var(--white);
 	font-size: 4rem;
 	flex-wrap: wrap;
 	justify-content: center;
-	background: hsl(200, 82%, 24%);
+	background: var(--dark-blue);
 }
 .skills-content h6 {
 	font-weight: bold;
-	color: black;
-	color: #1ec3c7;
+	color: var(--black);
+	color: var(--light-green);
 	border-radius: 5px;
 	text-align: center;
 	padding: 3px 4px 5px 4px;
@@ -314,18 +322,18 @@ header.sticky ul li a {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	border: 1px solid white;
+	border: 1px solid var(--white);
 	border-radius: 10px;
-	background: #222;
-	color: #fff;
+	background: var(--light-black);
+	color: var(--white);
 	max-width: 340px;
 	text-align: center;
 	transition: all 0.3s ease;
 }
 
 .skills-content > div:hover {
-	color: #fff;
-	background: hsl(200, 82%, 24%);
+	color: var(--white);
+	background: var(--dark-blue);
 	transform: scale(1.05);
 }
 
@@ -339,7 +347,7 @@ header.sticky ul li a {
 	grid-gap: 1.5rem;
 	max-width: 70%;
 	padding: 2rem;
-	background: hsl(200, 82%, 24%);
+	background: var(--dark-blue);
 	border-radius: 10px;
 }
 .project-content > a > img {
@@ -383,7 +391,6 @@ header.sticky ul li a {
 	justify-content: center;
 	font-size: calc(1.2rem + 0.2vw);
 	font-weight: 400;
-	color: var(--primary-font-color);
 }
 
 .project-content > a > p > span {
@@ -401,13 +408,13 @@ header.sticky ul li a {
 .contact {
 	background: hsl(200, 68%, 35%);
 	min-height: 90vh;
-	background: #222;
+	background: var(--light-black);
 }
 
 .contact div:first-child {
 	font-size: 2.5rem;
 	margin-bottom: 30px;
-	color: #fff;
+	color: var(--white);
 	font-size: 2.25rem;
 }
 
@@ -426,16 +433,16 @@ header.sticky ul li a {
 	margin-bottom: 10px;
 }
 .icon-background {
-	color: #1ec3c7;
+	color: var(--light-green);
 }
 .contact-container {
 	flex-direction: column;
 	width: auto;
-	background: #222;
-	color: #fff;
+	background: var(--light-black);
+	color: var(--white);
 	padding: 50px;
 	border-radius: 20px;
-	border: 2px #1ec3c7 solid;
+	border: 2px var(--light-green) solid;
 	margin-bottom: 10px;
 }
 .contact-container > span {
@@ -451,7 +458,7 @@ header.sticky ul li a {
 }
 .contact-icons > a {
 	top: 0;
-	color: #fff;
+	color: var(--white);
 	transition: all 0.3s ease-in-out;
 }
 
@@ -460,8 +467,8 @@ header.sticky ul li a {
 }
 
 .copyright {
-	background: #000;
-	color: #fff;
+	background: var(--black);
+	color: var(--white);
 	text-align: center;
 	padding: 10px;
 }
