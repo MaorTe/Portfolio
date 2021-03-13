@@ -564,6 +564,7 @@ scroll-page {
 		padding: 0;
 		margin: 0;
 	}
+
 	.about-container {
 		display: flex;
 		flex-direction: column;
@@ -581,6 +582,10 @@ scroll-page {
 	}
 	.contact-container {
 		width: 93vw;
+	}
+	.contact-icons.first {
+		margin-bottom: 30px;
+		justify-content: space-around;
 	}
 	header .logo {
 		font-size: 19px;
