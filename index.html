@@ -1,314 +1,281 @@
 <html>
-	<head>
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-			crossorigin="anonymous"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-			rel="stylesheet"
-		/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="normalize.css" />
-		<link rel="stylesheet" href="./style.css" />
-		<title>Personal Portfolio | Responsive Website Design</title>
+   <head>
+      <link
+         rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+         crossorigin="anonymous"
+      />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="normalize.css" />
+      <link rel="stylesheet" href="./style.css" />
+      <title>Personal Portfolio | Responsive Website Design</title>
 
-		<script
-			src="https://kit.fontawesome.com/5c4607dc13.js"
-			crossorigin="anonymous"
-		></script>
+      <script src="https://kit.fontawesome.com/5c4607dc13.js" crossorigin="anonymous"></script>
 
-		<script>
-			window.addEventListener('scroll', function () {
-				var header = document.querySelector('header');
-				header.classList.toggle('sticky', window.scrollY > 0);
-			});
-		</script>
-	</head>
-	<body>
-		<!-- Home -->
-		<scroll-container>
-			<scroll-page id="#home"></scroll-page>
-		</scroll-container>
-		<header>
-			<a href="#" class="logo">Portfolio</a>
-			<ul class="menu">
-				<li>
-					<a href="#home" class="btn-nav">Home</a>
-				</li>
-				<li>
-					<a href="#about" class="btn-nav">About</a>
-				</li>
-				<li>
-					<a href="#skills" class="btn-nav">Skills</a>
-				</li>
-				<li>
-					<a href="#projects" class="btn-nav">Projects</a>
-				</li>
-				<li>
-					<a href="#contact" class="btn-nav">Contact</a>
-				</li>
-			</ul>
-		</header>
+      <script>
+         window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+         });
+      </script>
+   </head>
+   <body>
+      <!-- Home -->
+      <scroll-container>
+         <scroll-page id="#home"></scroll-page>
+      </scroll-container>
+      <header>
+         <a href="#" class="logo">Portfolio</a>
+         <ul class="menu">
+            <li>
+               <a href="#home" class="btn-nav">Home</a>
+            </li>
+            <li>
+               <a href="#about" class="btn-nav">About</a>
+            </li>
+            <li>
+               <a href="#skills" class="btn-nav">Skills</a>
+            </li>
+            <li>
+               <a href="#projects" class="btn-nav">Projects</a>
+            </li>
+            <li>
+               <a href="#contact" class="btn-nav">Contact</a>
+            </li>
+         </ul>
+      </header>
 
-		<section class="banner" id="home">
-			<div class="banner-textBx">
-				<h2>Hi, I'm<br /><span>Maor Tene.</span></h2>
-				<h3>I am a Web developer.</h3>
-				<a href="#about" class="btn-banner btn">About Me</a>
-			</div>
-		</section>
+      <section class="banner" id="home">
+         <div class="banner-textBx">
+            <h2>Hi, I'm<br /><span>Maor Tene.</span></h2>
+            <h3>I am a Web developer.</h3>
+            <a href="#about" class="btn-banner btn">About Me</a>
+         </div>
+      </section>
 
-		<!-- About -->
-		<scroll-container>
-			<scroll-page id="about"></scroll-page>
-		</scroll-container>
-		<section class="about" id="about">
-			<div class="heading divider-custom-line">
-				<h2>About Me</h2>
-			</div>
-			<div class="about-container">
-				<div class="about-contentBx">
-					<h3>I am a Web developer.</h3>
-					<p>
-						B.Sc. Computer Science graduate & Frontend developer.<br />
-						Highly independent learning skills, good team player, excellent
-						interpersonal communication, highly self-motivated.<br />
-						I am passionate about everything related to frontend web
-						development.<br />
-						Every time I learn new technologies I love every second of it.
-						<br />I prefer writing an optimized and reusable code for good
-						maintenance.
-					</p>
-				</div>
-				<div>
-					<img src="./img/profilepic.jpeg" />
-				</div>
-			</div>
-		</section>
+      <!-- About -->
+      <scroll-container>
+         <scroll-page id="about"></scroll-page>
+      </scroll-container>
+      <section class="about" id="about">
+         <div class="heading divider-custom-line">
+            <h2>About Me</h2>
+         </div>
+         <div class="about-container">
+            <div class="about-contentBx">
+               <h3>I am a Web developer.</h3>
+               <p>
+                  B.Sc. Computer Science graduate & Fullstack | Frontend developer.<br />
+                  Highly independent learning skills, good team player, excellent interpersonal
+                  communication, highly self-motivated.<br />
+                  I am passionate about everything related to frontend web development.<br />
+                  Every time I learn new technologies I love every second of it.
+                  <br />I prefer writing an optimized and reusable code for good maintenance.
+               </p>
+            </div>
+            <div>
+               <img src="./img/profilepic.jpeg" />
+            </div>
+         </div>
+      </section>
 
-		<!-- Skills -->
-		<scroll-container>
-			<scroll-page id="skills"></scroll-page>
-		</scroll-container>
-		<div class="skills" id="skills">
-			<div class="heading divider-custom-line skills-title-margin-top">
-				<h2>Skills</h2>
-			</div>
-			<div class="skills-container">
-				<div class="skills-content">
-					<div>
-						<i class="fab fa-html5"></i>
-						<h6>HTML</h6>
-					</div>
-					<div>
-						<i class="fab fa-css3-alt"></i>
-						<h6>CSS</h6>
-					</div>
-					<div>
-						<i class="fab fa-js-square"></i>
-						<h6>JavaScript</h6>
-					</div>
-					<div class="text">
-						<img src="/img/typescript-icon.svg" alt="typescript" />
-						<h6>TypeScript</h6>
-					</div>
+      <!-- Skills -->
+      <scroll-container>
+         <scroll-page id="skills"></scroll-page>
+      </scroll-container>
+      <div class="skills" id="skills">
+         <div class="heading divider-custom-line skills-title-margin-top">
+            <h2>Skills</h2>
+         </div>
+         <div class="skills-container">
+            <div class="skills-content">
+               <div>
+                  <i class="fab fa-html5"></i>
+                  <h6>HTML</h6>
+               </div>
+               <div>
+                  <i class="fab fa-css3-alt"></i>
+                  <h6>CSS</h6>
+               </div>
+               <div>
+                  <i class="fab fa-js-square"></i>
+                  <h6>JavaScript</h6>
+               </div>
+               <div class="text">
+                  <img src="/img/typescript-icon.svg" alt="typescript" />
+                  <h6>TypeScript</h6>
+               </div>
 
-					<div>
-						<i class="fab fa-react"></i>
-						<h6>React</h6>
-					</div>
+               <div>
+                  <i class="fab fa-react"></i>
+                  <h6>React</h6>
+               </div>
 
-					<div class="text">
-						<img src="/img/redux-icon.svg" alt="redux" />
-						<h6>Redux</h6>
-					</div>
-					<div class="text">
-						<img src="/img/react-query.svg" alt="react-query" />
-						<h6>React-Query</h6>
-					</div>
-					<div>
-						<span>
-							<i class="fa fa-laptop" style="font-size: smaller"></i
-							><i class="fa fa-mobile-alt" style="font-size: 1.5rem"></i>
-						</span>
-						<h6>Responsive design</h6>
-					</div>
-					<div>
-						<i class="fab fa-node"></i>
-						<h6>Nodejs</h6>
-					</div>
+               <div class="text">
+                  <img src="/img/redux-icon.svg" alt="redux" />
+                  <h6>Redux</h6>
+               </div>
+               <div class="text">
+                  <img src="/img/react-query.svg" alt="react-query" />
+                  <h6>React-Query</h6>
+               </div>
+               <div>
+                  <span>
+                     <i class="fa fa-laptop" style="font-size: smaller"></i
+                     ><i class="fa fa-mobile-alt" style="font-size: 1.5rem"></i>
+                  </span>
+                  <h6 style="margin-top: 10px; margin-bottom: 0px">Responsive design</h6>
+               </div>
+               <div>
+                  <i class="fab fa-git-square"></i>
+                  <h6>Git</h6>
+               </div>
 
-					<div>
-						<i class="fab fa-git-square"></i>
-						<h6>Git</h6>
-					</div>
-					<div>
-						<i class="fa fa-code"></i>
-						<h6>Fast coding</h6>
-					</div>
+               <div>
+                  <i class="fab fa-node"></i>
+                  <h6>Nodejs</h6>
+               </div>
+               <div class="text">
+                  <img style="width: 110px; height: 36px" src="/img/mongoDB.png" alt="MongoDB" />
+                  <h6 style="margin-top: 28px; margin-bottom: 0px">MongoDB</h6>
+               </div>
+               <div class="text">
+                  <img src="/img/express.png" alt="Express.js" />
+                  <h6>Express.js</h6>
+               </div>
+            </div>
+         </div>
+      </div>
 
-					<div>
-						<i class="fas fa-lightbulb"></i>
-						<h6>Solving problem</h6>
-					</div>
-				</div>
-			</div>
-		</div>
+      <!-- Projects -->
+      <scroll-container>
+         <scroll-page id="projects"></scroll-page>
+      </scroll-container>
+      <section class="projects" id="projects">
+         <div class="heading divider-custom-line">
+            <h2>Projects</h2>
+         </div>
+         <section id="projects-container">
+            <div class="project-content">
+               <a href="https://udemy-fullstack-mern.herokuapp.com/" target="_blank">
+                  <img src="./img/coursesapp.PNG" alt="Courses App" title="Courses App" />
+                  <p><span class="code"><</span>Courses App<span class="code">/></span></p>
+               </a>
+            </div>
 
-		<!-- Projects -->
-		<scroll-container>
-			<scroll-page id="projects"></scroll-page>
-		</scroll-container>
-		<section class="projects" id="projects">
-			<div class="heading divider-custom-line">
-				<h2>Projects</h2>
-			</div>
-			<section id="projects-container">
-				<div class="project-content">
-					<a href="https://udemy-fullstack-mern.herokuapp.com/" target="_blank">
-						<img
-							src="./img/coursesapp.PNG"
-							alt="Courses App"
-							title="Courses App"
-						/>
-						<p>
-							<span class="code"><</span>Courses App<span class="code">/></span>
-						</p>
-					</a>
-				</div>
+            <div class="project-content">
+               <a href="https://maortemovieapp.netlify.app" target="_blank">
+                  <img src="./img/movies.PNG" alt="Movies App" title="Movies App" />
+                  <p><span class="code"><</span>Movies App<span class="code">/></span></p>
+               </a>
+            </div>
 
-				<div class="project-content">
-					<a href="https://maortemovieapp.netlify.app" target="_blank">
-						<img src="./img/movies.PNG" alt="Movies App" title="Movies App" />
-						<p>
-							<span class="code"><</span>Movies App<span class="code">/></span>
-						</p>
-					</a>
-				</div>
+            <div class="project-content">
+               <a href="https://restaurant-ts.netlify.app/" target="_blank">
+                  <img src="./img/restaurant.PNG" alt="Restaurant" title="Restaurant" />
+                  <p><span class="code"><</span>Restaurant<span class="code">/></span></p>
+               </a>
+            </div>
 
-				<div class="project-content">
-					<a href="https://restaurant-ts.netlify.app/" target="_blank">
-						<img
-							src="./img/restaurant.PNG"
-							alt="Restaurant"
-							title="Restaurant"
-						/>
-						<p>
-							<span class="code"><</span>Restaurant<span class="code">/></span>
-						</p>
-					</a>
-				</div>
+            <div class="project-content">
+               <a href="https://maorteminecraft.netlify.app" target="_blank">
+                  <img src="./img/minecraft.PNG" alt="Minecraft Game" title="Minecraft Game" />
+                  <p><span class="code"><</span>Minecraft Game<span class="code">/></span></p>
+               </a>
+            </div>
 
-				<div class="project-content">
-					<a href="https://maorteminecraft.netlify.app" target="_blank">
-						<img
-							src="./img/minecraft.PNG"
-							alt="Minecraft Game"
-							title="Minecraft Game"
-						/>
-						<p>
-							<span class="code"><</span>Minecraft Game<span class="code"
-								>/></span
-							>
-						</p>
-					</a>
-				</div>
+            <div class="project-content">
+               <a href="https://maortedicegame.netlify.app" target="_blank">
+                  <img src="./img/dicegame.PNG" alt="Dice Game" title="Dice Game" />
+                  <p><span class="code"><</span>Dice Game<span class="code">/></span></p>
+               </a>
+            </div>
 
-				<div class="project-content">
-					<a href="https://maortedicegame.netlify.app" target="_blank">
-						<img src="./img/dicegame.PNG" alt="Dice Game" title="Dice Game" />
-						<p>
-							<span class="code"><</span>Dice Game<span class="code">/></span>
-						</p>
-					</a>
-				</div>
+            <div class="project-content">
+               <a href="https://maortetodos.netlify.app/" target="_blank">
+                  <img src="./img/todos.PNG" alt="todos" title="todos" />
+                  <p><span class="code"><</span>Todos<span class="code">/></span></p>
+               </a>
+            </div>
+         </section>
+      </section>
 
-				<div class="project-content">
-					<a href="https://maortetodos.netlify.app/" target="_blank">
-						<img src="./img/todos.PNG" alt="todos" title="todos" />
-						<p><span class="code"><</span>Todos<span class="code">/></span></p>
-					</a>
-				</div>
-			</section>
-		</section>
+      <scroll-container>
+         <scroll-page id="contact"></scroll-page>
+      </scroll-container>
+      <section class="contact" id="contact">
+         <div class="heading divider-custom-line">
+            <span>Contact Me</span>
+         </div>
 
-		<scroll-container>
-			<scroll-page id="contact"></scroll-page>
-		</scroll-container>
-		<section class="contact" id="contact">
-			<div class="heading divider-custom-line">
-				<span>Contact Me</span>
-			</div>
+         <div class="contact-container">
+            <div class="heading"><h2>Follow Me On:</h2></div>
+            <div><p>Questions? Get into contact with me.</p></div>
 
-			<div class="contact-container">
-				<div class="heading"><h2>Follow Me On:</h2></div>
-				<div><p>Questions? Get into contact with me.</p></div>
-
-				<div class="contact-icons first">
-					<a
-						class="fa-stack fa-2x"
-						href="mailto:maor884@gmail.com"
-						title="mail"
-						target="_blank"
-					>
-						<i class="fa fa-circle fa-stack-2x icon-background icon-color"></i>
-						<i class="fas fa-mail-bulk fa-stack-1x"></i>
-					</a>
-					<a
-						class="fa-stack fa-2x"
-						href="https://www.facebook.com/maor.tene"
-						title="facebook"
-						target="_blank"
-					>
-						<i class="fa fa-circle fa-stack-2x icon-background"></i>
-						<i class="icon fab fa-facebook-f fa-stack-1x"></i
-					></a>
-					<a
-						class="fa-stack fa-2x"
-						href="https://github.com/MaorTe"
-						title="github"
-						target="_blank"
-					>
-						<i class="fa fa-circle fa-stack-2x icon-background"></i
-						><i class="icon fab fa-github fa-stack-1x"></i
-					></a>
-					<a
-						class="fa-stack fa-2x"
-						href="https://www.linkedin.com/in/maor-tene-web-developer/"
-						title="linkedin"
-						target="_blank"
-						><i class="fa fa-circle fa-stack-2x icon-background"></i>
-						<i class="icon fab fa-linkedin-in fa-stack-1x"></i
-					></a>
-				</div>
-				<div class="contact-last-heading">
-					<h2>SPREAD THE WORD!</h2>
-				</div>
-				<div class="contact-icons">
-					<a
-						class="fa-stack fa-2x"
-						href="https://www.linkedin.com/sharing/share-offsite/?url=https://maorte.netlify.app/"
-						title="linkedin"
-						target="_blank"
-						><i class="fa fa-circle fa-stack-2x icon-background"></i>
-						<i class="icon fab fa-linkedin-in fa-stack-1x"></i
-					></a>
-					<a
-						class="fa-stack fa-2x"
-						href="http://www.facebook.com/sharer.php?u=https://maorte.netlify.app/"
-						title="facebook"
-						target="_blank"
-					>
-						<i class="fa fa-circle fa-stack-2x icon-background"></i>
-						<i class="icon fab fa-facebook-f fa-stack-1x"></i
-					></a>
-				</div>
-			</div>
-		</section>
-		<footer class="copyright">
-			<p>&copy; 2021 Maor Tene. All Right Reserved.</p>
-		</footer>
-	</body>
+            <div class="contact-icons first">
+               <a
+                  class="fa-stack fa-2x"
+                  href="mailto:maor884@gmail.com"
+                  title="mail"
+                  target="_blank"
+               >
+                  <i class="fa fa-circle fa-stack-2x icon-background icon-color"></i>
+                  <i class="fas fa-mail-bulk fa-stack-1x"></i>
+               </a>
+               <a
+                  class="fa-stack fa-2x"
+                  href="https://www.facebook.com/maor.tene"
+                  title="facebook"
+                  target="_blank"
+               >
+                  <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                  <i class="icon fab fa-facebook-f fa-stack-1x"></i
+               ></a>
+               <a
+                  class="fa-stack fa-2x"
+                  href="https://github.com/MaorTe"
+                  title="github"
+                  target="_blank"
+               >
+                  <i class="fa fa-circle fa-stack-2x icon-background"></i
+                  ><i class="icon fab fa-github fa-stack-1x"></i
+               ></a>
+               <a
+                  class="fa-stack fa-2x"
+                  href="https://www.linkedin.com/in/maor-tene-web-developer/"
+                  title="linkedin"
+                  target="_blank"
+                  ><i class="fa fa-circle fa-stack-2x icon-background"></i>
+                  <i class="icon fab fa-linkedin-in fa-stack-1x"></i
+               ></a>
+            </div>
+            <div class="contact-last-heading">
+               <h2>SPREAD THE WORD!</h2>
+            </div>
+            <div class="contact-icons">
+               <a
+                  class="fa-stack fa-2x"
+                  href="https://www.linkedin.com/sharing/share-offsite/?url=https://maorte.netlify.app/"
+                  title="linkedin"
+                  target="_blank"
+                  ><i class="fa fa-circle fa-stack-2x icon-background"></i>
+                  <i class="icon fab fa-linkedin-in fa-stack-1x"></i
+               ></a>
+               <a
+                  class="fa-stack fa-2x"
+                  href="http://www.facebook.com/sharer.php?u=https://maorte.netlify.app/"
+                  title="facebook"
+                  target="_blank"
+               >
+                  <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                  <i class="icon fab fa-facebook-f fa-stack-1x"></i
+               ></a>
+            </div>
+         </div>
+      </section>
+      <footer class="copyright">
+         <p>&copy; 2021 Maor Tene. All Right Reserved.</p>
+      </footer>
+   </body>
 </html>
