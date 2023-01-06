@@ -1,24 +1,35 @@
 <html>
    <head>
-      <link
-         rel="stylesheet"
-         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-         crossorigin="anonymous" />
       <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+         name="description"
+         content="Creative Web Developer, possessing strong thinking skills with high energy, motivation, and integrity." />
       <link rel="stylesheet" href="normalize.css" />
-      <link rel="stylesheet" href="./style.css" />
-      <title>Personal Portfolio | Responsive Website Design</title>
+      <link rel="stylesheet" href="style.css" />
+      <link rel="icon" href="favicon.png" />
+      <title>Maor Tene | Personal Portfolio | Full Stack Developer</title>
 
+      <meta property="og:site_name" content="Maor Tene Home Page" />
+      <meta property="og:title" content="Maor Tene | Personal Portfolio | Full Stack Developer" />
+      <meta property="og:url" content="https://maorte.netlify.app/" />
+      <meta
+         property="og:description"
+         content="Creative Web Developer, possessing strong thinking skills with high energy, motivation, and integrity." />
+      <meta property="og:image" content="http://maorte.netlify.app/img/profilepic.jpeg" />
+      <meta
+         property="og:image:secure_url"
+         content="https://maorte.netlify.app/img/profilepic.jpeg" />
+      <meta property="og:image:alt" content="profile picture" />
+      <meta property="og:type" content="website" />
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:updated_time" content="1670448306437" />
+      <meta name="author" content="Maor Tene" />
+
+      <link rel="canonical" href="https://maorte.netlify.app/" />
       <script src="https://kit.fontawesome.com/5c4607dc13.js" crossorigin="anonymous"></script>
-
-      <script>
-         window.addEventListener('scroll', function () {
-            var header = document.querySelector('header');
-            header.classList.toggle('sticky', window.scrollY > 0);
-         });
-      </script>
    </head>
+
    <body>
       <!-- Home -->
       <scroll-container>
@@ -275,7 +286,14 @@
          </div>
       </section>
       <footer class="copyright">
-         <p>&copy; 2022 Maor Tene. All Right Reserved.</p>
+         <p>&copy; 2023 Maor Tene. All Right Reserved.</p>
       </footer>
+
+      <script>
+         window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+         });
+      </script>
    </body>
 </html>
