@@ -287,7 +287,7 @@
       </div>
     </section>
     <footer class="copyright">
-      <p>&copy; 2023 Maor Tene. All Right Reserved.</p>
+      <p>&copy; <span id="footer-year"></span> Maor Tene. All Right Reserved.</p>
     </footer>
 
     <script>
@@ -303,6 +303,7 @@
       if (now.getMonth() < start.getMonth()) years--;
       years = Math.max(1, years + 1); // Always at least 1
       document.getElementById("years-experience").textContent = years;
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
